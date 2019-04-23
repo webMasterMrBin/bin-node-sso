@@ -1,0 +1,22 @@
+{
+  "name": "sso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start1": "SSO_CLIENT1=http://localhost:6010 supervisor node app.js",
+    "start2": "SSO_CLIENT2=http://localhost:6020 supervisor node app.js",
+    "starts": "SSO_SERVER=http://localhost:6030 supervisor node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.4.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11"
+  }
+}
